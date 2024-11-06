@@ -7,8 +7,9 @@ function fetchPokemon() {
         .then(data => {
             let altura = data.height*10;
             let peso = data.weight/10;
-            let correcaoAltura
+            let correcaoAltura;
             let correcaoPeso;
+            let shinySpriteUrl = data.sprites.front_default.replace('front_default', 'front_shiny');
             if (altura >= 100) {
                 correcaoAltura = (altura / 100).toFixed(2) + "m";
               } else {
