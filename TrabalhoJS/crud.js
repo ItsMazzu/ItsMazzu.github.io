@@ -22,7 +22,8 @@ function fetchPokemon() {
               }
             pokemonInfo.innerHTML = `
                 <h2>${data.name}</h2>
-                <img src="${data.sprites.front_default}" alt="${data.name}">
+                <img src="${data.sprites.front_default}" alt="Sprite normal de ${data.name}">
+                <img src="${shinySpriteUrl}" alt="Sprite shiny de ${data.name}">
                 <h3>Tipo(s)</h3>
                 <ul>
                     ${data.types.map(type => `<li>${type.type.name}</li>`).join('')}
