@@ -2,7 +2,7 @@ function fetchPokemon() {
     const pokemonInput = document.getElementById('pokemon-input');
     const pokemonInfo = document.getElementById('pokemon-info');
     const pokemonName = pokemonInput.value.toLowerCase();
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/# `${pokemonName}`)
         .then(response => response.json())
         .then(data => {
             let altura = data.height*10;
