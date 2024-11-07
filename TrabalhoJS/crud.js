@@ -38,7 +38,6 @@ function fetchPokemon() {
                 </ul>
                 <h3>Informações Extras</h3>
                 <ul>
-                <p>Número na Pokédex: ${data.id}</p>
                 <p>Altura: ${correcaoAltura}</p>
                 <p>Peso: ${correcaoPeso}</p>
                 </ul>
