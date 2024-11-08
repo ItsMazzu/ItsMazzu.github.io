@@ -5,8 +5,8 @@ function fetchPokemon() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
         .then(response => response.json())
         .then(data => {
-            let altura = data.height*10; //altura que normalmente é retornada em decímetros
-            let peso = data.weight/10; //o peso é retornado na medida de hectogramas
+            let altura = data.height*10; //altura que normalmente é retornada em decímetros, isso serve p/ converter para centímetros ou metros.
+            let peso = data.weight/10; //o peso é retornado na medida de hectogramas, isso serve p/ convertar para uma medida conhecida, kg ou ton.
             let correcaoAltura;
             let correcaoPeso;
             if (altura >= 100) {
