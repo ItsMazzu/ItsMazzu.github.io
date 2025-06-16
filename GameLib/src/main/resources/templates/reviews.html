@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Reviews</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <nav>
+        <img src="/img/logo.png" alt="GameLib Logo" class="navbar-logo" />
+        <a href="/" th:href="@{/}">Home</a> |
+        <a href="/favorite-games" th:href="@{/favorite-games}">Seus Games</a> |
+        <a href="/favorite-consoles" th:href="@{/favorite-consoles}">Seus Consoles</a> |
+        <a href="/eras" th:href="@{/eras}">Eras dos Games</a>
+    </nav>
+    <h1>Reviews</h1>
+    <p>Sua review aqui:</p>
+    <!-- Removed reviewerNameInput as per request -->
+    <input type="text" id="gameNameInput" placeholder="Nome do Jogo" />
+    <input type="number" step="0.1" min="0" max="5" id="ratingInput" placeholder="Sua Avaliação" />
+    <input type="text" id="commentInput" placeholder="Comentários" />
+
+    <button onclick="addReview()">Adicionar Review</button>
+
+    <div id="reviewsContainer"></div>
+
+    <script src="/js/reviews.js"></script>
+</body>
+</html>

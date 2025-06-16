@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>GameLib</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <nav>
+        <img src="/img/logo.png" alt="GameLib Logo" class="navbar-logo" />
+        <a href="/favorite-games" th:href="@{/favorite-games}">Seus Jogos</a> |
+        <a href="/favorite-consoles" th:href="@{/favorite-consoles}">Seus Consoles</a> |
+        <a href="/eras" th:href="@{/eras}">Eras dos Games</a> |
+        <a href="/reviews" th:href="@{/reviews}">Reviews</a>
+    </nav>
+    <h1>Seja muito bem-vindo(a) ao GameLib!</h1>
+    <p>Esse site visa facilitar a organização e listagem dos jogos e consoles favoritos de seus usuários que, como gamers natos, podem se perder na hora de dizer quais suas preferências.</p>
+</body>
+</html>

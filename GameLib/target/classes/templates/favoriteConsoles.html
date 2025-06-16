@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seus Consoles</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <nav>
+        <img src="/img/logo.png" alt="GameLib Logo" class="navbar-logo" />
+        <a href="/" th:href="@{/}">Home</a> |
+        <a href="/favorite-games" th:href="@{/favorite-games}">Seus Games</a> |
+        <a href="/eras" th:href="@{/eras}">Eras dos Games</a> |
+        <a href="/reviews" th:href="@{/reviews}">Reviews</a>
+    </nav>
+    <h1>Seus Consoles</h1>
+    <p>Insira seus consoles favoritos abaixo:</p>
+    <input type="text" id="consoleNameInput" placeholder="Nome do Console" />
+    <input type="text" id="consoleDescriptionInput" placeholder="Sobre o Console" />
+    <input type="text" id="consoleReleaseDateInput" placeholder="Ano de Lançamento" />
+    <input type="number" step="0.1" min="0" max="5" id="consoleEvaluationInput" placeholder="Sua Avaliação" />
+    <button onclick="addConsole()">Adicionar Console</button>
+    <table id="consolesTable" border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Nome do Console</th>
+                <th>Descrição</th>
+                <th>Ano de Lançamento</th>
+                <th>Sua Avaliação</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="/js/favoriteConsoles.js"></script>
+</body>
+</html>

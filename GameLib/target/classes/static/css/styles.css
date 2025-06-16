@@ -1,0 +1,255 @@
+/* General styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    background: linear-gradient(90deg, blue, rgb(202, 0, 175));
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-logo {
+    max-height: 75px;
+    margin-right: 15px;
+    vertical-align: middle;
+    position: sticky;
+    left: 10px;
+    top: 10px;
+}
+
+nav a {
+    color: rgb(62, 200, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Logo image in navbar */
+/* .navbar-logo {
+    max-height: 45px;
+    margin-right: 15px;
+    vertical-align: left;
+} */
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(90deg, blue, rgb(202, 0, 175));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Content paragraphs */
+p {
+    text-align: center;
+    margin: 15px 20px;
+    font-size: 1.1em;
+}
+
+/* Input and button styles */
+input[type="text"], input[type="number"], input[type="password"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid rgb(0, 255, 251);
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+}
+
+button {
+    display: block;
+    margin: 10px auto 30px auto;
+    padding: 10px 20px;
+    background-color: #3a1a6a; 
+    border: 2px solid #7b3fbf;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #5a2a9a;
+    transition: background-color 0.3s ease;
+}
+
+/* Align labels and inputs in login/register forms */
+.dropdown-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-section label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dropdown-section input {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #5a1a6a;
+    box-shadow: 1px 1px 0 #5a2a9a;
+}
+
+/* Table styles for standard look */
+table#reviewsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+/* Center tables on consoles and games pages */
+table#consolesTable, table#gamesTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove button hover highlight red */
+button.remove-button:hover {
+    background-color: red;
+    color: white;
+}
+
+table#reviewsTable th, table#reviewsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+table#reviewsTable th {
+    background-color: #4B0082; /* Dark purple */
+    color: white;
+}
+
+.rating-positive {
+    color: green;
+    font-weight: bold;
+}
+
+.rating-average {
+    color: orange;
+    font-weight: bold;
+}
+
+.rating-negative {
+    color: red;
+    font-weight: bold;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+li {
+    background: linear-gradient(90deg, blue, rgb(202, 0, 175));
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    input[type="text"], input[type="number"], button, ul {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Styles for dropdown menus (details/summary) */
+details {
+    background-color: #100019; 
+    border: 2px solid #7b3fbf; 
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 0 #5a2a9a; 
+}
+
+summary {
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+    user-select: none;
+    color: #fff;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    color: #fff;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.button-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.label-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00fff2;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.button-label button {
+    margin-top: 5px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Eras</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <nav>
+        <img src="/img/logo.png" alt="GameLib Logo" class="navbar-logo" />
+        <a href="/" th:href="@{/}">Home</a> |
+        <a href="/favorite-games" th:href="@{/favorite-games}">Seus Games</a> |
+        <a href="/favorite-consoles" th:href="@{/favorite-consoles}">Seus Consoles</a> |
+        <a href="/reviews" th:href="@{/reviews}">Reviews</a>
+    </nav>
+    <h1>Eras dos Games</h1>
+    <script src="/js/erasDropdown.js"></script>
+
+    <details>
+        <summary><b>Era Clássica</b></summary>
+        <p><b>Período: 1958-1999</b></p>
+        <div>
+            Era de origem e consolidação dos games, acompanhada também do auge dos arcades, popularização de consoles caseiros e da transição do 2D para o 3D. Esse período é marcado pela cultura de criação de mascotes, com os maiores exemplos disso sendo Mario, Sonic, Pac-Man, Crash e outros.
+        </div><br>
+        <p><b>Jogos e Consoles Memoráveis</b></p>
+        <ul>
+            <p>Jogos</p><br>
+            <li>Pong</li>
+            <li>Donkey Kong</li>
+            <li>Pac-Man</li>
+            <li>Super Mario World</li>
+            <li>Pokémon Red/Blue/Yellow</li>
+            <li>Doom</li>
+            <li>Sonic Adventure</li>
+            <li>The Legend of Zelda: Ocarina of Time & Majora's Mask</li>
+            <li>Street Fighter</li>
+            <li>Resident Evil</li>
+            <li>Megaman X</li><br><br>
+            <p>Consoles</p>
+            <li>SNES "Super Nintendo"</li>
+            <li>NES "Nintendinho"</li>
+            <li>N64 "Nintendo 64"</li>
+            <li>PS1</li>
+            <li>GB, GBC e GBA</li>
+            <li>Mega Drive, Master System e Dreamcast</li>
+        </ul><br><br>
+    </details>
+
+    <details>
+        <summary><b>Era Moderna</b></summary>
+        <p><b>Período: 2000-2019</b></p>
+        <div>
+            Era em que a explosão gráfica ocorreu, onde os jogos ficam cada vez mais realistas conforme o passar dos anos. Nessa era também surgem o multiplayer online e os marketplaces digitais, como a Steam e a Epic Games Store, trazendo os jogos em mídia digital. Além disso, a era moderna também é marcada pela popularização dos jogos indies, que são apreciados até hoje. Aqui também surgem as DLCs.
+        </div>
+        <p><b>Jogos, Consoles e Serviços Memoráveis</b></p>
+        <ul>
+            <p><b>Jogos</b></p><br>
+            <li>Undertale</li>
+            <li>League of Legends</li>
+            <li>Call of Duty</li>
+            <li>GTA V</li>
+            <li>Soul Knight</li>
+            <li>Pokémon FireRed/LeafGreen, Platinum e Black 2/White 2</li>
+            <li>Minecraft</li>
+            <li>Super Smash Bros. Ultimate</li>
+            <li>Super Mario Odissey</li>
+            <li>TLoZ: Breath of the Wild</li>
+            <li>Sonic Colors e Sonic Unleashed</li>
+            <li>Pokémon Legends: Arceus</li>
+            <li>CS:GO</li>
+            <li>Celeste</li>
+            <li>God of War</li>
+            <li>Fortnite</li><br><br>
+            <p><b>Consoles e Serviços</b></p><br>
+            <li>PS2, PS3 e PS4</li>
+            <li>Nintendo DS e Wii</li>
+            <li>PCs</li>
+            <li>Nintendo Switch</li>
+            <li>Xbox</li>
+            <li>Steam</li>
+            <li>Epic Games Store</li>
+            <li>Nintendo e-Shop</li><br><br>
+        </ul>
+    </details>
+
+    <details>
+        <summary><b>Era Contemporânea</b></summary>
+        <p><b>Período: 2020 em diante</b></p>
+        <div>
+            Era em que a integração e o cross-play se tornam cada vez mais comuns, com a popularização dos jogos em cloud e a expansão dos serviços de streaming, além de também haver uma enorme melhoria gráfica, graças ao Ray Tracing e outras tecnologias, isso torna sim os jogos mais realistas e bonitos, porém necessitam de um hardware cada vez mais potente, o que torna os equipamentos necessários cada vez mais caros e menos acessíveis. Além disso, a era contemporânea também é marcada pela popularização dos jogos de realidade virtual e aumentada.
+        </div>
+        <p><b>Jogos, Consoles e Serviços Memoráveis</b></p>
+        <ul>
+            <p><b>Jogos</b></p><br>
+            <li>Stardew Valley</li>
+            <li>Destiny 2</li>
+            <li>Overwatch 2</li>
+            <li>Genshin Impact</li>
+            <li>FNAF: Security Breach</li>
+            <li>FNAF AR</li>
+            <li>Pokémon GO</li>
+            <li>Wuthering Waves</li>
+            <li>ZZZ</li>
+            <li>Elden Ring</li>
+            <li>Baldur's Gate</li>
+            <li>GoW:Ragnarok</li>
+            <li>Doom Eternal</li>
+            <li>Sonic Frontiers</li>
+            <li>Zelda: Tears of the Kingdom</li>
+            <li>Metroid Dread</li>
+            <li>Cyberpunk 2077</li><br><br>
+            <p><b>Consoles e Serviços</b></p><br>
+            <li>Xbox Series X e Series S</li>
+            <li>PS5</li>
+            <li>Nintendo Switch 1 e 2</li>
+            <li>Steam Deck</li>
+            <li>ROG Ally</li>
+            <li>Xbox Game Pass</li>
+            <li>PS Plus</li>
+            <li>GeForce NOW</li>
+            <li>Itch.io</li>
+            <li>xCloud</li>
+        </ul>
+    </details>
+</body>
+</html>

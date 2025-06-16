@@ -1,0 +1,14 @@
+com\gameLib\GameLib\PagesController.class
+com\gameLib\GameLib\model\UserGame.class
+com\gameLib\GameLib\repository\ReviewRepository.class
+com\gameLib\GameLib\model\Review.class
+com\gameLib\GameLib\FavoritesRestController.class
+com\gameLib\GameLib\ReviewsRestController.class
+com\gameLib\GameLib\model\User.class
+com\gameLib\GameLib\repository\UserConsoleRepository.class
+com\gameLib\GameLib\model\Console.class
+com\gameLib\GameLib\repository\UserGameRepository.class
+com\gameLib\GameLib\GameLibApplication.class
+com\gameLib\GameLib\model\Game.class
+com\gameLib\GameLib\model\UserConsole.class
+com\gameLib\GameLib\repository\UserRepository.class
